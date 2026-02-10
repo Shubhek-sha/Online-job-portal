@@ -1,14 +1,19 @@
 import React from "react";
 
-function Header() {
+const Header = () => {
   return (
-    <div className="mt-10 flex flex-col gap-5 items-center justify-center text-white">
-      <h1 className="text-5xl font-bold ">
-        Your ideal jobs is waiting for you{" "}
-      </h1>
-      <p className="text-xl">Get latest job openigs that best suits you</p>
-    </div>
+    <header className="bg-rgb(88, 28, 135), text-white py-12 px-4">
+      <div className="container mx-auto text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">JobPortal</h1>
+        <h2 className="text-xl md:text-2xl mb-6">
+          Your ideal job is waiting for you
+        </h2>
+        <p className="text-lg opacity-90 max-w-2xl mx-auto">
+          Get latest job openings that best suits you
+        </p>
+      </div>
+    </header>
   );
-}
+};
 
 export default Header;
